@@ -19,7 +19,6 @@
       <span class="headerTitle">dfu-programmer</span>
       <div class="menuBar">
         <span title="Home">Home</span>|
-        <span title="Summary"><a href="http://dfu-programmer.github.io">Summary</a></span>|
         <span title="Releases"><a href="http://sourceforge.net/project/showfiles.php?group_id=147246">Releases</a></span>|
         <span title="Source"><a href="https://github.com/dfu-programmer/dfu-programmer">Source</a></span>
       </div>
@@ -43,8 +42,10 @@
     <div id="bodyText">
       <h1 id="welcome">Welcome</h1>
       <dl>
-        <dd>dfu-programmer is a Device Firmware Update based USB programmer
-            for Atmel chips with a USB bootloader.</dd>
+        <dd>dfu-programmer is a multi-platform command-line programmer for Atmel (8051, AVR, XMEGA & AVR32) chips with
+        a USB bootloader supporting ISP. Most Atmel devices having a USB port come pre-programmed with the bootloader
+        and this is a lightweight alternative to Atmel's own FLIP/BatchISP program, which is Windows-specific.
+        This is a mostly Device Firmware Update (DFU) 1.0 compliant user-space application.</dd>
       </dl>
 
       <a class="topOfPage" href="#top" title="Top Of Page">top</a>
@@ -116,8 +117,8 @@
       <h1 id="why">Why dfu-programmer?</h1>
       <dl>
         <dd>The need for this tool came about when I needed to flash an
-           at89c51snd1c chip that had the USB bootloader on it, but the Atmel
-           provided tool (FLIP) didn't support USB flashing in linux.</dd>
+           at89c51snd1c chip that had the USB bootloader on it, but the Atmel-provided tool
+           (FLIP) didn't support USB flashing in linux.</dd>
         <dd>After a few days of web searching and scrapping together a windows
            machine to do the job, I found that Atmel provided a document
            describing the communications protocol used.  I happily spent the
@@ -132,7 +133,10 @@
     </div>
     
     <!-- ###### Footer ###### -->
-    <div>
+    <div class="LHS">
+      <a href="http://github.com"><img src="github_logo.png" width="90" height="37" alt="GitHub logo" /></a>
+    </div>
+    <div class="RHS">
       <a href="http://sourceforge.net"><img src="http://sourceforge.net/sflogo.php?group_id=147246&amp;type=2" width="125" height="37" alt="SourceForge.net Logo" /></a>
     </div>
     <div id="footer">
@@ -145,11 +149,11 @@
       </div>
       
       <div>
-        http://www.oswd.org/design/1112/bluehaze/index.html
+        <a href="http://www.oswd.org/design/1112/bluehaze/index.html" title="theme">Bluehaze theme</a>
       </div>
 
       <div>
-        Website designed by <a href="http://www.oswd.org/email.phtml?user=haran" title="Email author">haran</a>
+        Website design by <a href="http://www.oswd.org/email.phtml?user=haran" title="Email author">haran</a>
       </div>
     </div>
   </body></html>
