@@ -9,6 +9,9 @@
 
 /* For IE & Mozilla-based browsers: */
 
+/* Fix for Windows 8 snap mode */
+@-ms-viewport { width:device-width; }
+
 .LHS {
   margin-left: 2.5mm;
   float: left;
@@ -56,6 +59,11 @@ h1 {
   padding-bottom: 0.5ex;
 }
 
+h3 {
+  margin: 0;
+  padding-bottom: 0.5ex;
+}
+
 img {
   border: none;
 }
@@ -92,8 +100,9 @@ dd {
 
 #bodyText {
   text-align: justify;
-  line-height: 1.5em;
-  margin: 10mm 5mm 0 14em;
+  line-height: 1.2em;
+  margin: 10mm 0 0 14em;
+  max-width: 900px;
   padding: 0 1em 1ex 1em;
 }
 
@@ -105,6 +114,7 @@ dd {
 }
 
 #bodyText p {
+  margin: 0;
   padding-bottom: 2ex;
 }
 
@@ -139,7 +149,7 @@ dd {
 #header {
   border-bottom-style: solid;
   border-bottom-width: 2px;
-  height: 7.5em;
+  min-height: 7.5em;
   margin-bottom: 5mm;
   padding: 0 2.5mm 0 5mm;
   background-repeat: no-repeat;
@@ -156,7 +166,7 @@ dd {
 }
 
 .menuBar {
-  float: left;
+  /* float: left; */
 }
 
 .locBar {
@@ -271,3 +281,23 @@ th a {
 th a:hover {
   text-decoration: underline;
 }
+@media only screen and (max-width: 799px) {
+#header {
+  min-height: 0;
+  margin-bottom: 10px;
+  padding: 0 5px;
+}
+.sideBox {
+    display: none;
+}
+#bodyText {
+  margin: 10px 0 0 0;
+  padding: 0 5px;
+}
+}
+@media only screen and (max-width: 599px) {
+.headerTitle {
+  font-size: 180%;
+}
+}
+
