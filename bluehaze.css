@@ -113,7 +113,7 @@ dd {
   padding: 0 1em 1ex 1em;
 }
 
-#bodyText p {
+#bodyText p, #bodyText ul {
   margin: 0;
   padding-bottom: 2ex;
 }
